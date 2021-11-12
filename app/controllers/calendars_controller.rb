@@ -15,7 +15,7 @@ class CalendarsController < ApplicationController
   private
 
   def plan_params
-    params.require(:calendars).permit(:date, :plan)//Issue4の変更点はここですか？
+    params.require(:calendars).permit(:date, :plan)
   end
 
   def getWeek
